@@ -30,7 +30,7 @@ USER_AGENT = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/
 
 def main():
     # Küsime kasutajalt veebilehe URL'i, mida ta soovib analüüsida.
-    website_url = input("Palun sisestage veebilehe URL, näidis (https://google.com): ")
+    website_url = input("Palun sisestage veebilehe URL järgnevas formaadis: (https://domain.tld): ")
 
     # Esialgsed analüüsid uurivad järgnevaid andmeid veebilehel: Sitemap.xml, HTTPS ja Robots.txt.
     has_sitemap = check_website(website_url + "/sitemap.xml", USER_AGENT)
